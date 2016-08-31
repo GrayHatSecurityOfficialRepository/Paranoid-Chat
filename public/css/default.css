@@ -1,0 +1,113 @@
+/*------------------------------------*\
+	GENERIC
+\*------------------------------------*/
+html {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+
+	font-family: monospace, 'Courier New';
+	font-size: 12px;
+}
+
+body, html {
+	min-height: 100%;
+	min-width: 600px;
+	background-color: #000000;
+	overflow: hidden;
+	padding: 0px;
+	margin:0px;
+	color: #00DD00;
+}
+
+.good 		{ color: #38d02b; }
+.bad 		{ color: #ff7777; }
+.info 		{ color: #99FFFF; }
+.neutral	{ color: #eeeeee; }
+
+/*------------------------------------*\
+	CHAT
+\*------------------------------------*/
+#chat {
+	left: 0;
+	right: 0;
+	bottom: 40px;
+	position: absolute;
+	list-style-type: none;
+	padding:0;
+	margin:0;
+}
+
+/* Messages */
+#chat li {
+	white-space: pre;
+	padding: 2px 15px;
+	color: #606006;
+}
+
+#chat li .timestamp {
+	color: #808008;
+}
+
+/* Message types */
+/* the `i` element hold the actual message */
+#chat i {
+	font-style: normal;
+}
+#chat i.motd	{ color: #99FF99; display:inline-block; line-height: 12px !important; }
+#chat i.info	{ color: #999999; }
+#chat i.server	{ color: #99FFFF; }
+#chat i.error	{ color: #ff7777; }
+#chat i.message	{ color: #09ff00; }
+#chat i.nick	{ color: #99FF99; }
+#chat i.fatal	{ color: #ff7777; }
+
+/*------------------------------------*\
+	INPUT & LOADER
+\*------------------------------------*/
+#input_wrapper {
+	right:0;
+	bottom:0;
+	left:0;
+	position: absolute;
+
+	height:30px;
+}
+
+#input,
+#loader {
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+
+	border: 0;
+	outline: 0;
+
+	padding: 5px 5px 5px 15px;
+
+	color: #FFFFFF;
+	background-color:#141414;
+	height:30px;
+}
+
+#input { z-index: 1; }
+#loader { z-index: 0; line-height: 20px; font-size: 14px; font-weight: 100; font-family: tahoma;}
+
+/*------------------------------------*\
+	SPINNER
+\*------------------------------------*/
+.loading #loader { z-index: 2; }
+.loading #loader span {
+	margin-left:-2px;
+	-webkit-animation: rotation 1s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}

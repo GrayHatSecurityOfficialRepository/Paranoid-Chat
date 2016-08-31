@@ -1,0 +1,15 @@
+{
+  "name": "paranoid-chat",
+  "description": "Client side end 2 end AES encryption chat",
+  "keywords": [
+    "paranoid-chat",
+    "paranoidchat",
+    "crypto-js",
+    "AES",
+    "secure",
+    "html5",
+    "encryption",
+    "privacy"
+  ],
+  "repository": "https://github.com/GrayHatSecurityOfficialRepository/Paranoid-Chat"
+}
