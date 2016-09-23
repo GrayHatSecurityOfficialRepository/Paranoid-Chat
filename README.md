@@ -62,4 +62,3 @@ to prevent browsers from keeping history or cache.
 
 
 ```
-"# Paranoid-Chat" 
