@@ -9,7 +9,8 @@
     "secure",
     "html5",
     "encryption",
-    "privacy"
+    "privacy",
+    "heroku"
   ],
   "repository": "https://github.com/GrayHatSecurityOfficialRepository/Paranoid-Chat"
 }
